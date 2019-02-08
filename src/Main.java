@@ -40,7 +40,7 @@ public class Main {
         }
 
         if(count == words.length) {
-            return "~speeling complete 100%~";
+            return "~spelling complete 100%~";
         }
 
         for(int i = 0; i < words.length; i++) {
