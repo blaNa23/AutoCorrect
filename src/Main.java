@@ -75,14 +75,14 @@ public class Main {
         //in caz ca nu sunt cuvinte oneEditAway, ne uitam sa vedem daca sunt twoEditAway
         if(myList.size() == 0) {
             for (Map.Entry<String, Integer> entry : map.entrySet()) {
-                String rezultat = spellchecker.spellingOne(string, entry.getKey());
+                String rezultat = spellchecker.spellingTwo(string, entry.getKey());
 
                 if (!rezultat.equalsIgnoreCase("notTwoEdit")) {
                     myList.add(map.get(spellchecker.spellingTwo(string, entry.getKey())));
                 }
             }
         }
-        //??? marimea listei este 8000 si totusi primul element este null ??
+        
         System.out.println("marimea listei:" + myList.size());
         System.out.println("primul elem din lista:" + myList.get(0));
 
